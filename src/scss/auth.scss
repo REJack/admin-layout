@@ -1,0 +1,26 @@
+.auth-block {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+  }
+
+  &__card {
+    width: 100%;
+
+    .card__title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+    @include input-mixin;
+
+    .form__button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

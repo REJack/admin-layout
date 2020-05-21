@@ -1,0 +1,28 @@
+.citizen-search {
+  &__form {
+    @include inputs-block;
+  }
+}
+
+.button-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-bottom: 1rem;
+}
+
+@include media-breakpoint-down(xs) {
+  .button-block {
+    flex-direction: column;
+    align-items: center;
+
+    &__btn {
+      max-width: 12.25rem;
+
+      &:first-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

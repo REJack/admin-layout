@@ -1,0 +1,53 @@
+@mixin input-mixin {
+  .form__input-block {
+    display: flex;
+    align-items: center;
+
+    .input-block__label {
+      margin-bottom: 0;
+      width: calc(100% / 3);
+    }
+
+    .input-block__input {
+      .input-group-apppend .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .form__input-block {
+      flex-wrap: wrap;
+
+      .input-block__label {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@mixin inputs-block {
+  .inputs-block {
+    &__short-input {
+      min-width: 6.75rem;
+      max-width: 25%;
+    }
+
+    &__long-input {
+      width: 75%;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .inputs-block {
+      &__short-input {
+        margin-bottom: 1rem;
+      }
+
+      &__long-input {
+        width: 100%;
+      }
+    }
+  }
+}

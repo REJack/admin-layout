@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+
+    &__copyright {
+      margin-bottom: 1rem;
+    }
+  }
+}

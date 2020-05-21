@@ -1,0 +1,25 @@
+.citizen-add {
+  &__form {
+    @include input-mixin;
+
+    .form__tab {
+      .tab__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after {
+          display: none;
+        }
+
+        .button-block {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .form__btn {
+      max-width: 15rem;
+    }
+  }
+}
